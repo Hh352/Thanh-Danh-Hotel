@@ -1,0 +1,319 @@
+/* =============================================
+   OFFERS.CSS — Trang Ưu Đãi
+   Theo mockup Figma: ảnh tròn trái + box trắng phải
+============================================= */
+
+/* ---- Shared header classes (cùng với index.css) ---- */
+.icon-gold       { color: #F2B203; }
+.flag-img        { height: 18px; object-fit: cover; cursor: pointer; }
+.flag-img-drawer { height: 20px; object-fit: cover; cursor: pointer; }
+.logo-img-lg     { height: 80px; object-fit: contain; }
+.logo-img-sm     { height: 40px; object-fit: contain; }
+.logo-img-drawer { height: 36px; object-fit: contain; }
+.partner-img     { height: 20px; }
+.partner-img-sm  { height: 18px; }
+.partner-img-bg  { background: #fff; padding: 2px 4px; border-radius: 4px; }
+.header-main-inner { display: flex; justify-content: space-between; align-items: center; }
+.mobile-logo     { display: none; }
+.main-nav.header-nav-row { flex: 1; border-top: none; padding: 15px 0; }
+.mobile-drawer-extra { display: none; }
+.drawer-divider  { margin: 24px 20px 12px; border-top: 1px solid rgba(0,0,0,0.1); }
+.drawer-flags    { display: flex; gap: 12px; padding: 0 20px; margin-bottom: 16px; }
+.drawer-partners {
+    display: flex; flex-wrap: wrap; gap: 10px;
+    padding: 12px 20px; background: #f8fafc;
+    margin: 0 10px; border-radius: 8px; align-items: center;
+}
+.fb-page-container { background: white; border-radius: 4px; overflow: hidden; margin-bottom: 15px; }
+.fb-iframe { border: none; overflow: hidden; max-width: 340px; }
+.partner-footer    { height: 25px; border-radius: 4px; }
+.partner-footer-bg { background: white; padding: 3px 6px; border-radius: 4px; box-sizing: border-box; height: 25px; }
+.partner-footer-lg { height: 35px; border-radius: 4px; }
+
+/* ---- HERO ---- */
+.section-hero-offers {
+    position: relative;
+    height: 400px;
+    background-image: url('../images/offers_banner.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.offers-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(11,29,58,0.80) 0%, rgba(11,29,58,0.45) 100%);
+}
+.offers-hero-inner {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 0 20px;
+}
+.offers-hero-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    color: #d4af37;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
+.offers-hero-label::before,
+.offers-hero-label::after {
+    content: '';
+    width: 36px;
+    height: 1px;
+    background: #d4af37;
+}
+.offers-hero-title {
+    font-size: clamp(28px, 5vw, 50px);
+    font-weight: 800;
+    color: #fff;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    margin-bottom: 14px;
+}
+.offers-hero-sub {
+    font-size: 15px;
+    color: rgba(255,255,255,0.82);
+    font-style: italic;
+    font-weight: 400;
+}
+
+/* ---- SECTION ---- */
+.section-offers-list {
+    padding: 70px 0 90px;
+    background: #f8fafc;
+}
+
+.offers-page-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.offers-page-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 11px;
+    font-weight: 700;
+    color: #d4af37;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    display: block;
+}
+.offers-page-tag::before,
+.offers-page-tag::after { content: none; }
+.offers-page-title {
+    font-size: clamp(22px, 3vw, 32px);
+    font-weight: 800;
+    color: #0b1d3a;
+    position: relative;
+    padding-bottom: 16px;
+}
+.offers-page-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background: #d4af37;
+    border-radius: 2px;
+}
+
+/* ---- OFFER LIST ---- */
+.offers-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+/* ---- OFFER ROW ----
+   Theo mockup: ảnh bo tròn trái (độc lập),
+   box trắng nội dung phải, hai cái bằng nhau
+---- */
+.offer-row {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 24px;
+    align-items: stretch;
+}
+.offer-row--inactive { opacity: 0.72; }
+.offer-row--inactive:hover { opacity: 0.85; }
+
+/* Ảnh — bo tròn, đứng độc lập ngoài box trắng */
+.offer-row__img {
+    position: relative;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 28px rgba(11,29,58,0.14);
+    min-height: 220px;
+}
+.offer-row__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+.offer-row:hover .offer-row__img img {
+    transform: scale(1.04);
+}
+.offer-row--inactive .offer-row__img img {
+    filter: grayscale(30%);
+}
+
+/* Badge giảm giá trên ảnh */
+.offer-row__badge {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    background: #d4af37;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1;
+    padding: 9px 13px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(212,175,55,0.45);
+    z-index: 2;
+}
+.offer-row__badge small {
+    display: block;
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-top: 3px;
+    opacity: 0.9;
+}
+
+/* Box trắng — nội dung */
+.offer-row__body {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 20px rgba(11,29,58,0.07);
+    border: 1px solid #e8edf4;
+    padding: 28px 32px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.offer-row:hover .offer-row__body {
+    box-shadow: 0 12px 36px rgba(11,29,58,0.12);
+    /* transform: translateY(-3px); */
+}
+.offer-row--inactive:hover .offer-row__body {
+    transform: none;
+    box-shadow: 0 4px 20px rgba(11,29,58,0.07);
+}
+
+/* Title */
+.offer-row__title {
+    font-size: 17px;
+    font-weight: 800;
+    color: #0b1d3a;
+    margin-bottom: 0;
+    line-height: 1.4;
+    position: relative;
+    padding-bottom: 12px;
+}
+.offer-row__title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 36px;
+    height: 3px;
+    background: #d4af37;
+    border-radius: 2px;
+}
+
+/* Features list — dấu ✓ theo mockup */
+.offer-row__features {
+    list-style: none;
+    padding: 0;
+    margin: 18px 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    flex: 1;
+}
+.offer-row__features li {
+    font-size: 13.5px;
+    color: #475569;
+    line-height: 1.6;
+    padding-left: 18px;
+    position: relative;
+}
+.offer-row__features li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #0b1d3a;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+/* Footer: meta + status */
+.offer-row__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    border-top: 1px solid #f1f5f9;
+    padding-top: 16px;
+    margin-top: 18px;
+    flex-wrap: wrap;
+}
+.offer-row__meta {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.offer-meta-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 12px;
+    color: #94a3b8;
+    font-weight: 500;
+}
+.meta-icon { width: 13px; height: 13px; }
+
+/* Status text */
+.offer-row__status {
+    font-size: 13px;
+    font-weight: 700;
+}
+.offer-row__status--active   { color: #059669; }
+.offer-row__status--inactive { color: #ef4444; }
+
+/* ---- RESPONSIVE ---- */
+@media (max-width: 768px) {
+    .offer-row {
+        grid-template-columns: 1fr;
+    }
+    .offer-row__img {
+        min-height: 220px;
+        max-height: 260px;
+    }
+    .offer-row__body { padding: 22px 20px 20px; }
+    .section-hero-offers { height: 320px; }
+    .section-offers-list { padding: 50px 0 70px; }
+}
+@media (max-width: 480px) {
+    .offers-hero-title { font-size: 28px; }
+    .offer-row__title { font-size: 15px; }
+    .offer-row__features li { font-size: 13px; }
+    .offer-row__footer { flex-direction: column; align-items: flex-start; gap: 8px; }
+}

@@ -1,0 +1,419 @@
+/*=============================================
+=            RESPONSIVE MEDIA QUERIES       =
+=============================================*/
+
+/* Large Tablets & Small Desktops (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .room-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .gallery-item.large {
+    grid-column: span 1;
+    grid-row: span 1;
+    height: 200px;
+  }
+
+  .attractions-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .social-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .header-top {
+    display: none; /* Hide top bar on mobile for cleaner look, or adapt it */
+  }
+
+  .header-middle {
+    display: none !important;
+  }
+
+  .mobile-logo {
+    display: block !important;
+  }
+
+  .header-main {
+    padding: 10px 0 !important;
+  }
+
+  /* Dark overlay behind the drawer */
+  .nav-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+    transition: opacity 0.3s ease;
+  }
+
+  .nav-overlay.active {
+    display: block;
+  }
+
+  .main-nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    left: auto;
+    width: 72%;
+    max-width: 300px;
+    height: 100vh;
+    background: var(--white);
+    flex-direction: column;
+    padding: 20px 0 30px;
+    transition: right 0.35s ease;
+    box-shadow: -5px 0 30px rgba(0,0,0,0.2);
+    overflow-y: auto;
+    z-index: 999;
+  }
+
+  .main-nav.active {
+    right: 0;
+    left: auto;
+  }
+
+  /* Drawer top header with logo + close button */
+  .drawer-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px 20px;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+    margin-bottom: 8px;
+  }
+
+  .drawer-close-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--primary-color);
+    background: rgba(0,0,0,0.05);
+    transition: background 0.2s ease;
+  }
+
+  .drawer-close-btn:hover {
+    background: rgba(0,0,0,0.1);
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    gap: 0;
+    align-items: flex-start;
+    width: 100%;
+    padding: 0 5px;
+  }
+
+  .main-nav ul li {
+    width: 100%;
+    border-bottom: 1px solid rgba(0,0,0,0.07);
+  }
+
+  .main-nav ul li:first-child {
+    border-top: 1px solid rgba(0,0,0,0.07);
+  }
+
+  .main-nav ul li a {
+    display: block;
+    padding: 14px 20px;
+    font-size: 14px;
+    text-align: left;
+    border-bottom: none;
+    letter-spacing: 0.5px;
+  }
+
+  .mobile-menu-btn {
+    display: block;
+    margin-left: auto;
+  }
+
+  .mobile-drawer-extra {
+    display: block !important;
+    width: 100%;
+  }
+
+  .price-slider-wrapper {
+    right: 50%;
+    transform: translateX(50%);
+    width: 90%;
+    max-width: 350px;
+    justify-content: center;
+  }
+
+  .price-slider-line {
+    width: 100%;
+  }
+
+  .section-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: auto !important;
+    padding-top: 280px !important;
+    position: relative;
+  }
+
+  .hero-play-btn {
+    position: absolute !important;
+    top: 140px !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    width: 50px !important;
+    height: 50px !important;
+    margin: 0 !important;
+  }
+
+  .booking-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .form-group-row {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 10px !important;
+    width: 100% !important;
+  }
+
+  .form-group-row .form-group {
+    flex: 1 !important;
+  }
+
+  .form-group-row .form-group label {
+    padding-left: 5px !important;
+    font-size: 10px !important;
+  }
+
+  .booking-form-wrapper {
+    position: relative !important;
+    bottom: auto !important;
+    left: auto !important;
+    transform: none !important;
+    width: 90% !important;
+    max-width: 450px !important;
+    margin: -50px auto 30px !important;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15) !important;
+    border-radius: 20px !important;
+    padding: 20px 15px !important;
+  }
+
+  .room-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Footer mobile overhaul */
+  .footer-grid {
+    grid-template-columns: 1fr !important;
+    gap: 30px !important;
+  }
+
+  .footer-col-info,
+  .footer-col-links,
+  .footer-col-social {
+    text-align: left !important;
+  }
+
+  .footer-col-links {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 20px;
+  }
+
+  .footer-col-social {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 20px;
+  }
+
+  .footer-contact-list p {
+    justify-content: flex-start !important;
+  }
+
+  .footer-partners {
+    justify-content: flex-start !important;
+    gap: 12px !important;
+  }
+
+  /* Amenity highlight stacking on mobile */
+  .amenity-row {
+    flex-direction: column !important;
+    gap: 12px !important;
+    width: 100%;
+    text-align: center;
+  }
+
+  .amenity-divider {
+    display: none !important;
+  }
+
+  .amenities-highlights-container {
+    gap: 12px;
+  }
+
+  /* Slide navigation buttons adjustment on mobile to not overflow */
+  .room-slider-wrapper .swiper-button-prev.custom-nav-btn,
+  .blog-slider-wrapper .swiper-button-prev.custom-nav-btn,
+  .testimonial-slider-wrapper .swiper-button-prev.custom-nav-btn {
+    left: 10px !important;
+  }
+  
+  .room-slider-wrapper .swiper-button-next.custom-nav-btn,
+  .blog-slider-wrapper .swiper-button-next.custom-nav-btn,
+  .testimonial-slider-wrapper .swiper-button-next.custom-nav-btn {
+    right: 10px !important;
+  }
+
+  .custom-nav-btn {
+    width: 38px !important;
+    height: 38px !important;
+    margin-top: -19px !important;
+  }
+
+  .custom-nav-btn::after {
+    font-size: 14px !important;
+  }
+}
+
+/* Mobile Phones (max-width: 480px) */
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 24px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .attractions-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .social-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .room-tabs {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  /* About Us Page Mobile */
+  .hero-about-title {
+    font-size: 24px;
+  }
+  .hero-about-subtitle {
+    font-size: 14px;
+    padding: 0 15px;
+  }
+  .about-grid, .mv-grid, .brand-values-grid, .explore-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .mv-card {
+    height: 300px;
+  }
+  .core-values-banner {
+    height: 250px;
+  }
+  .customers-carousel-container {
+    padding: 0 20px;
+  }
+
+  /* Rooms Page Mobile */
+  .rooms-hero-title {
+    font-size: 24px;
+  }
+  .rooms-hero-subtitle {
+    font-size: 14px;
+  }
+  .rooms-hero-card {
+    padding: 20px;
+    margin: 0 15px;
+  }
+  
+  .rooms-filter-container { margin-top: 10px; }
+  .rooms-booking-bar {
+
+    flex-direction: column;
+    align-items: stretch;
+    border-radius: 15px;
+    padding: 20px;
+  }
+  .rooms-booking-bar .booking-item {
+    border-right: none;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+  }
+  .rooms-booking-bar .booking-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  .rooms-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Offers Page Mobile */
+  .offer-card {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 20px;
+  }
+  .offer-image {
+    width: 200px;
+    height: 200px;
+  }
+  .offer-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  .meta-info {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  /* Blog Page Mobile */
+  .blog-layout {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
+  .blog-sidebar {
+    position: static;
+  }
+
+  /* Contact Page Mobile */
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+  .contact-image-col {
+    height: 300px;
+  }
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+

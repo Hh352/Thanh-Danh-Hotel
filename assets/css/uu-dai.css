@@ -1,0 +1,261 @@
+/* Styles specific to uu-dai.html */
+
+/* =============================================
+           ƯU ĐÃI PAGE — REDESIGN STYLES
+        ============================================= */
+
+        /* ---- HERO ---- */
+        .section-hero-offers {
+            position: relative;
+            height: 480px;
+            background: linear-gradient(135deg,rgba(11,29,58,.92) 0%,rgba(11,29,58,.75) 50%,rgba(212,175,55,.25) 100%),
+                        url('assets/images/offers_banner.png') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        .section-hero-offers::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 30% 50%, rgba(212,175,55,.15) 0%, transparent 50%);
+            animation: pulse 8s ease-in-out infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 0.5; }
+            50% { opacity: 1; }
+        }
+        .offers-hero-inner { 
+            position:relative; 
+            z-index:2; 
+            text-align:center; 
+            padding:0 20px;
+            animation: fadeInUp 1s ease-out;
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .offers-hero-label {
+            display: inline-flex; 
+            align-items: center; 
+            gap: 12px;
+            color: #d4af37; 
+            font-size: 12px; 
+            font-weight: 700;
+            letter-spacing: 3.5px; 
+            text-transform: uppercase; 
+            margin-bottom: 20px;
+            animation: fadeIn 1s ease-out 0.3s both;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .offers-hero-label::before,.offers-hero-label::after {
+            content:''; 
+            width:40px; 
+            height:2px; 
+            background: linear-gradient(90deg, transparent, #d4af37, transparent);
+        }
+        .offers-hero-title {
+            font-size: clamp(32px,5.5vw,58px); 
+            font-weight: 800;
+            color: #fff; 
+            line-height: 1.15; 
+            letter-spacing: 2px; 
+            margin-bottom: 18px;
+            text-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            animation: fadeInUp 1s ease-out 0.5s both;
+        }
+        .offers-hero-sub {
+            font-size: 16px; 
+            color: rgba(255,255,255,.88);
+            font-style: italic; 
+            font-weight: 400;
+            max-width: 600px;
+            margin: 0 auto;
+            animation: fadeInUp 1s ease-out 0.7s both;
+        }
+
+        /* ---- SECTION ---- */
+        .section-offers-list { 
+            padding: 90px 0 110px; 
+            background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+            position: relative;
+        }
+        .section-offers-list::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            max-width: 1200px;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #d4af37, transparent);
+            opacity: 0.3;
+        }
+        .section-offers-list .container { max-width: 1400px; }
+        .offers-section-header { 
+            text-align:center; 
+            margin-bottom: 64px;
+            animation: fadeInUp 0.8s ease-out;
+        }
+        .offers-section-tag {
+            display: inline-flex; 
+            align-items: center; 
+            gap: 12px;
+            font-size: 11px; 
+            font-weight: 700; 
+            color: #d4af37;
+            letter-spacing: 3.5px; 
+            text-transform: uppercase; 
+            margin-bottom: 16px;
+        }
+        .offers-section-tag::before,.offers-section-tag::after {
+            content:''; 
+            width:35px; 
+            height:2px; 
+            background: linear-gradient(90deg, transparent, #d4af37, transparent);
+        }
+        .offers-section-title {
+            font-size: clamp(24px,3.5vw,36px); 
+            font-weight: 800; 
+            color: #0b1d3a;
+            letter-spacing: 0.5px;
+        }
+
+        /* ---- LIST ---- */
+        .offers-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            align-items: center;
+        }
+
+        /* ---- OFFER ROW: Tách rời ảnh và box nội dung ---- */
+        .offer-card {
+            display: flex;
+            align-items: stretch;
+            background: #ffffff;
+            box-shadow: 0 4px 24px rgba(11,29,58,.06);
+            border: 1px solid #e8edf4;
+            border-radius: 20px;
+            position: relative;
+            animation: fadeInUp 0.6s ease-out both;
+            max-width: 1000px;
+            width: 100%;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        .offer-card:hover {
+            box-shadow: 0 16px 40px rgba(0,0,0,0.18);
+            border-color: #d4af37;
+            /* /* transform: translateY(-5px); */ */
+        }
+        .offer-card:nth-child(1) { animation-delay: 0.1s; }
+        .offer-card:nth-child(2) { animation-delay: 0.2s; }
+        .offer-card:nth-child(3) { animation-delay: 0.3s; }
+        .offer-card:nth-child(4) { animation-delay: 0.4s; }
+        .offer-card.is-inactive { 
+            opacity: 0.4; 
+            filter: grayscale(100%); 
+            pointer-events: none; /* Tránh click/hover vào ưu đãi đã hết hạn */
+        }
+        .offer-image {
+            width: 320px;
+            flex-shrink: 0;
+            position: relative;
+            overflow: hidden;
+        }
+        .offer-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Box nội dung bên phải */
+        .offer-content {
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex: 1;
+            position: relative;
+        }
+
+        .offer-title {
+            font-size: 18px; 
+            font-weight: 700; 
+            color: #111827;
+            line-height: 1.4; 
+            margin-bottom: 20px;
+        }
+
+        /* Features list */
+        .offer-features {
+            list-style: none; 
+            margin: 0 0 30px; 
+            padding: 0;
+            display: flex; 
+            flex-direction: column; 
+            gap: 6px;
+            flex: 1;
+        }
+        .offer-features li {
+            display: flex; 
+            align-items: flex-start; 
+            font-size: 13.5px; 
+            color: #374151; 
+            line-height: 1.5;
+            font-weight: 500;
+        }
+
+        /* Footer */
+        .offer-footer {
+            display: flex; 
+            align-items: center; 
+            gap: 20px; 
+            flex-wrap: wrap;
+        }
+        .offer-meta-item {
+            display: flex; 
+            align-items: center; 
+            gap: 8px;
+            font-size: 12px; 
+            color: #6b7280; 
+            font-weight: 500;
+        }
+        .offer-meta-item i { 
+            width: 16px; 
+            height: 16px; 
+            opacity: 0.6;
+            color: #9ca3af;
+        }
+
+        /* Status text inline */
+        .offer-status-inline {
+            font-size: 14px; 
+            font-weight: 700;
+            margin-left: auto;
+        }
+        .offer-status-inline.active { 
+            color: #10b981;
+        }
+        .offer-status-inline.inactive { 
+            color: #ef4444;
+        }
+
+        /* Bỏ status badge trên ảnh — dùng inline text thay */
+        .offer-status-badge { display: none; }
+
+        /* ---- RESPONSIVE ---- */
+        
+
+

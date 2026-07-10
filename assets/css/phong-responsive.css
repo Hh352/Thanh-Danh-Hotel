@@ -1,0 +1,50 @@
+/* Responsive styles specific to phong.html */
+
+@media (max-width: 1024px) {
+            .rooms-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+
+
+
+        @media (max-width: 768px) {
+            .section-hero-rooms { height: 380px; }
+            .rooms-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+            .rooms-tabs { gap: 8px; flex-wrap: wrap; justify-content: center; }
+            .room-tab-btn { padding: 10px 20px; font-size: 12px; }
+            .rooms-tabs-wrapper { margin-bottom: 30px; }
+            .section-rooms-list { padding: 50px 0 70px; }
+            
+            .room-image { height: 120px; }
+            .room-info { padding: 12px 10px; }
+            .room-title { font-size: 12px; margin-bottom: 6px; }
+            .room-features { gap: 6px; flex-direction: row; flex-wrap: wrap; margin-bottom: 8px; }
+            .room-feature-item { font-size: 10px; }
+            .room-desc { display: none; } /* Hide description to save space on mobile */
+            .room-price { font-size: 12px; margin-bottom: 4px; }
+            .room-price-sub { font-size: 10px; }
+            .room-card-footer { flex-direction: column; align-items: flex-start; gap: 8px; padding-top: 8px; border-top: none; }
+            .room-book-btn { width: 100%; justify-content: center; padding: 8px; font-size: 11px; }
+        }
+
+
+
+
+
+
+
+        @media (max-width: 480px) {
+            .rooms-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+            .room-tab-btn { padding: 8px 10px; font-size: 11px; width: calc(50% - 4px); text-align: center; }
+            .rooms-tabs { gap: 8px; justify-content: space-between; }
+            
+            .room-image { height: 140px; }
+            .room-title { font-size: 12px; }
+            .room-feature-item { font-size: 10px; }
+            .room-desc { font-size: 10px; }
+            .room-price { font-size: 12px; }
+        }
+
+
+
+
+

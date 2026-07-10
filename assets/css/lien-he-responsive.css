@@ -1,0 +1,136 @@
+/* Responsive styles specific to lien-he.html */
+
+@media(max-width: 992px) {
+            .contact-layout {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            .contact-image-col {
+                position: static;
+            }
+            .form-grid {
+                gap: 24px;
+            }
+        }
+
+
+
+        
+        @media(max-width: 768px) {
+            .section-hero-contact { height: 360px; }
+            .contact-hero-title { font-size: clamp(26px, 7vw, 36px); }
+            .section-contact-form { padding: 60px 0; }
+            .contact-form-col {
+                padding: 32px 28px;
+            }
+            .form-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            .form-left {
+                gap: 20px;
+            }
+            .h-100-textarea {
+                min-height: 180px;
+            }
+        }
+
+
+
+        
+        @media(max-width: 480px) {
+            .section-hero-contact { height: 320px; }
+            .contact-hero-label { font-size: 10px; letter-spacing: 2.5px; }
+            .contact-hero-title { letter-spacing: 1px; }
+            .contact-hero-sub { font-size: 14px; }
+            .contact-form-col {
+                padding: 28px 20px;
+                border-radius: 16px;
+            }
+            .btn-submit {
+                width: 100%;
+                padding: 14px 32px;
+            }
+        }
+
+
+
+    
+        
+        
+        
+        /* Global Section Title */
+        .global-section-title {
+            text-align: center !important;
+            position: relative;
+            margin-bottom: 50px;
+            padding-bottom: 15px;
+            font-size: clamp(24px, 4vw, 36px);
+            font-weight: 800;
+            color: #0b1d3a;
+            text-transform: uppercase;
+            border-left: none !important;
+            padding-left: 0 !important;
+        }
+
+
+
+        
+        /* Make sure titles on dark backgrounds are white */
+        .section-hero .global-section-title,
+        .section-hero-blog .global-section-title,
+        .section-hero-about .global-section-title,
+        .section-hero-contact .global-section-title,
+        .section-hero-rooms .global-section-title,
+        .section-hero-offers .global-section-title,
+        .section-customers .global-section-title,
+        .section-social .global-section-title,
+        .hero-wrapper .global-section-title,
+        .page-hero .global-section-title {
+            color: #ffffff !important;
+        }
+
+
+
+
+        .global-section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, #d4af37, #f2c85b);
+            border-radius: 2px;
+        }
+
+
+
+
+        
+        /* Make sure titles on dark backgrounds are white */
+        .section-social .global-section-title,
+        .hero-wrapper .global-section-title,
+        .page-hero .global-section-title,
+        .section-hero .global-section-title {
+            color: #ffffff !important;
+        }
+
+
+
+
+        .global-section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, #d4af37, #f2c85b);
+            border-radius: 2px;
+        }
+
+
+

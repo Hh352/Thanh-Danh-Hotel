@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thành Danh Hotel - Trang Chủ</title>
+    <meta name="description" content="Chào mừng đến với Thành Danh Hotel, nơi nghỉ dưỡng lý tưởng tại Đồng Hới, Quảng Bình.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+    <link rel="stylesheet" href="assets/css/style.css?v=20">
+    <link rel="stylesheet" href="assets/css/responsive.css?v=20">
+    <link rel="stylesheet" href="assets/css/index.css?v=20">
+    <link rel="stylesheet" href="assets/css/index-responsive.css?v=20">
+</head>
+<body>
+
+    <!-- Header Top -->
+    <div class="header-top">
+        <div class="container">
+            <div class="top-contact-left">
+                <i data-lucide="map-pin" width="14" height="14" class="icon-gold"></i>
+                42 Đường Thành Công, Đồng Hới
+            </div>
+            <div class="top-contact-right">
+                <i data-lucide="phone-call" width="14" height="14" class="icon-gold"></i>
+                0822515558
+            </div>
+        </div>
+    </div>
+
+    <!-- Header Middle -->
+    <div class="header-middle">
+        <div class="container">
+            <div class="header-top-row">
+                <div class="header-left-flags">
+                    <img src="https://flagcdn.com/w40/vn.png" alt="VN" title="Tiếng Việt" class="flag-img">
+                    <img src="https://flagcdn.com/w40/gb.png" alt="EN" title="English" class="flag-img">
+                </div>
+                <div class="header-center-logo">
+                    <a href="index.html">
+                        <img src="assets/images/Logo-Thành Danh ( gốc ).png" alt="Thành Danh Hotel Logo" class="logo-img-lg">
+                    </a>
+                </div>
+                <div class="header-right-partners">
+                    <a href="#"><img src="assets/images/facebook.png" alt="Facebook" class="partner-img"></a>
+                    <a href="#"><img src="assets/images/zalo.png" alt="Zalo" class="partner-img"></a>
+                    <a href="#"><img src="assets/images/instagram.png" alt="Instagram" class="partner-img"></a>
+                    <a href="#"><img src="assets/images/booking.png" alt="Booking.com" class="partner-img"></a>
+                    <a href="#"><img src="assets/images/expedia.png" alt="Expedia" class="partner-img"></a>
+                    <a href="#"><img src="assets/images/trip.png" alt="Trip.com" class="partner-img"></a>
+                    <a href="#"><img src="assets/images/tripadvisor.png" alt="TripAdvisor" class="partner-img"></a>
+                    <a href="#"><img src="assets/images/agoda.png" alt="Agoda" class="partner-img"></a>
+                    <a href="#"><img src="assets/images/traveloka.png" alt="Traveloka" class="partner-img"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header (Sticky Nav) -->
+    <header class="header-main">
+        <div class="container header-main-inner">
+            <a href="index.html" class="mobile-logo">
+                <img src="assets/images/Logo-Thành Danh ( gốc ).png" alt="Thành Danh Hotel Logo" class="logo-img-sm">
+            </a>
+            <nav class="main-nav header-nav-row">
+                <div class="drawer-header">
+                    <a href="index.html">
+                        <img src="assets/images/Logo-Thành Danh ( gốc ).png" alt="Thành Danh Hotel Logo" class="logo-img-drawer">
+                    </a>
+                    <button class="drawer-close-btn" id="drawer-close-btn" aria-label="Đóng menu">
+                        <i data-lucide="x"></i>
+                    </button>
+                </div>
+                <ul>
+                    <li><a href="index.html" class="active">TRANG CHỦ</a></li>
+                    <li><a href="gioi-thieu.html">GIỚI THIỆU</a></li>
+                    <li><a href="phong.html">PHÒNG</a></li>
+                    <li><a href="uu-dai.html">ƯU ĐÃI</a></li>
+                    <li><a href="bai-viet.html">BÀI VIẾT</a></li>
+                    <li><a href="lien-he.html">LIÊN HỆ</a></li>
+                </ul>
+                <div class="mobile-drawer-extra">
+                    <div class="drawer-divider"></div>
+                    <div class="drawer-flags">
+                        <img src="https://flagcdn.com/w40/vn.png" alt="VN" title="Tiếng Việt" class="flag-img-drawer">
+                        <img src="https://flagcdn.com/w40/gb.png" alt="EN" title="English" class="flag-img-drawer">
+                    </div>
+                    <div class="drawer-partners">
+                        <a href="#"><img src="assets/images/facebook.png" alt="Facebook" class="partner-img-sm"></a>
+                        <a href="#"><img src="assets/images/zalo.png" alt="Zalo" class="partner-img-sm"></a>
+                        <a href="#"><img src="assets/images/instagram.png" alt="Instagram" class="partner-img-sm"></a>
+                        <a href="#"><img src="assets/images/booking.png" alt="Booking.com" class="partner-img-sm"></a>
+                        <a href="#"><img src="assets/images/tripadvisor.png" alt="TripAdvisor" class="partner-img-sm"></a>
+                        <a href="#"><img src="assets/images/agoda.png" alt="Agoda" class="partner-img-sm partner-img-bg"></a>
+                        <a href="#"><img src="assets/images/traveloka.png" alt="Traveloka" class="partner-img-sm partner-img-bg"></a>
+                    </div>
+                </div>
+            </nav>
+            <button class="mobile-menu-btn">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- ===== HERO ===== -->
+        <section class="section-hero">
+            <video class="hero-video-bg" id="heroVideo" autoplay muted loop playsinline controls>
+                <source src="assets/video/Luxury Hotel Video Reel 2023 - Jade and Jase (1080p, h264).mp4" type="video/mp4">
+            </video>
+        </section>
+
+        <!-- ===== BOOKING FORM + TABS ===== -->
+        <div class="booking-form-wrapper">
+            <form action="#" class="booking-form" id="bookingForm">
+                <!-- Ngày nhận phòng -->
+                <div class="bf-group">
+                    <label class="bf-label">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                        Ngày nhận phòng
+                    </label>
+                    <input class="bf-input" type="date" id="checkin-date">
+                </div>
+                <!-- Ngày trả phòng -->
+                <div class="bf-group">
+                    <label class="bf-label">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                        Ngày trả phòng
+                    </label>
+                    <input class="bf-input" type="date" id="checkout-date">
+                </div>
+                <!-- Số phòng -->
+                <div class="bf-group bf-group--counter">
+                    <label class="bf-label">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                        Số phòng
+                    </label>
+                    <div class="bf-counter">
+                        <button type="button" class="bf-counter-btn" onclick="changeCount('rooms',-1)">−</button>
+                        <span class="bf-counter-val" id="rooms-val">1</span>
+                        <button type="button" class="bf-counter-btn" onclick="changeCount('rooms',1)">+</button>
+                    </div>
+                </div>
+                <!-- Người lớn -->
+                <div class="bf-group bf-group--counter">
+                    <label class="bf-label">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                        Người lớn
+                    </label>
+                    <div class="bf-counter">
+                        <button type="button" class="bf-counter-btn" onclick="changeCount('adults',-1)">−</button>
+                        <span class="bf-counter-val" id="adults-val">2</span>
+                        <button type="button" class="bf-counter-btn" onclick="changeCount('adults',1)">+</button>
+                    </div>
+                </div>
+                <!-- Trẻ em -->
+                <div class="bf-group bf-group--counter">
+                    <label class="bf-label">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="5"></circle><path d="M3 21v-2a7 7 0 0 1 7-7h4a7 7 0 0 1 7 7v2"></path></svg>
+                        Trẻ em
+                    </label>
+                    <div class="bf-counter">
+                        <button type="button" class="bf-counter-btn" onclick="changeCount('children',-1)">−</button>
+                        <span class="bf-counter-val" id="children-val">0</span>
+                        <button type="button" class="bf-counter-btn" onclick="changeCount('children',1)">+</button>
+                    </div>
+                </div>
+                <!-- Giá phòng -->
+                <div class="bf-group bf-group-price">
+                    <label class="bf-label">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                        Giá phòng
+                    </label>
+                    <button type="button" class="bf-price-btn" id="price-dropdown-toggle">
+                        <span id="price-label">Chọn giá</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="bf-chevron"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="price-slider-wrapper" id="price-dropdown">
+                        <div class="price-header">
+                            <div class="price-values">
+                                <span id="price-min-display">200.000đ</span>
+                                <span class="price-separator">-</span>
+                                <span id="price-max-display">900.000đ</span>
+                            </div>
+                        </div>
+                        <div class="price-slider-line">
+                            <div class="price-slider-line-active" id="price-slider-progress"></div>
+                            <input type="range" class="price-range-min" min="200000" max="900000" value="200000" step="10000" id="price-min">
+                            <input type="range" class="price-range-max" min="200000" max="900000" value="900000" step="10000" id="price-max">
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="bf-submit">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                    Tìm kiếm
+                </button>
+            </form>
+        </div>
+
+
+
+        <!-- ===== WELCOME SECTION ===== -->
+        <section class="section-welcome">
+            <div class="container">
+                <h1 class="welcome-title">Chào mừng đến với Thành Danh Hotel</h1>
+                <p class="welcome-desc">Như một nốt trầm ấm áp và tinh tế giữa lòng thành phố Đồng Hới, Thành Danh Hotel với quy mô 7 tầng gồm 30 phòng, tọa lạc tại vị trí đắc địa, mặt tiền hướng ra công viên xanh mát, ôm trọn tầm nhìn lãng mạn của sông và cầu Nhật Lệ. Mang trong mình lối thiết kế tối giản giữa nét hiện đại và sự gần gũi, ấm cúng; tỏa sáng nhẹ nhàng nhưng đầy cuốn hút giữa nhịp sống phố biển. Thành Danh Hotel chính là điểm đến lý tưởng, mang đến cho bạn những trải nghiệm nghỉ dưỡng đa dạng từ dịch vụ tận tâm và tiện ích chu đáo của khách sạn.</p>
+
+                <h2 class="welcome-title amenities-title">Đặc điểm nổi bật</h2>
+                <div class="amenities-highlights-container">
+                    <div class="amenity-row">
+                        <span class="amenity-highlight-item active" data-image="assets/images/amenity_park.png">Mặt tiền hướng ra công viên (phía sau)</span>
+                        <span class="amenity-divider"></span>
+                        <span class="amenity-highlight-item" data-image="assets/images/amenity_river.png">View hướng sông &amp; cầu Nhật Lệ, Lệ Kỳ</span>
+                        <span class="amenity-divider"></span>
+                        <span class="amenity-highlight-item" data-image="assets/images/amenity_parking.png">Có bãi đỗ xe dọc theo con đường</span>
+                    </div>
+                    <div class="amenity-row">
+                        <span class="amenity-highlight-item" data-image="assets/images/amenity_plaza.png">Gần các khu vực: Quảng trường Hồ Chí Minh</span>
+                        <span class="amenity-divider"></span>
+                        <span class="amenity-highlight-item" data-image="assets/images/amenity_beach.png">Biển Bảo Ninh, biển Nhật Lệ</span>
+                        <span class="amenity-divider"></span>
+                        <span class="amenity-highlight-item" data-image="assets/images/amenity_highway.png">Đường tránh, đường cao tốc</span>
+                    </div>
+                    <div class="amenity-row">
+                        <span class="amenity-highlight-item" data-image="assets/images/amenity_mall.png">Trung tâm văn hóa Ủy ban tỉnh, siêu thị Co.opmart, Vincom</span>
+                        <span class="amenity-divider"></span>
+                        <span class="amenity-highlight-item" data-image="assets/images/amenity_airport.png">Tượng đài Mẹ Suốt, ga tàu, sân bay Đồng Hới</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== BEACH BANNER ===== -->
+        <section class="section-beach-banner">
+            <img src="assets/images/beach_banner.png" alt="Bãi biển" class="beach-img" id="amenity-highlight-img">
+        </section>
+
+        <!-- ===== ROOMS SECTION ===== -->
+        <section class="section-rooms" id="rooms">
+            <div class="container">
+                <h2 class="section-title room-main-title">
+                    <span></span>PHÒNG NGHỈ DƯỠNG TẠI THÀNH DANH HOTEL
+                </h2>
+
+                <!-- Standard Category -->
+                <div class="room-category">
+                    <h3 class="category-title">Standard:</h3>
+                    <div class="room-slider-wrapper">
+                        <div class="swiper room-swiper standard-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="room-card">
+                                        <div class="room-image">
+                                            <a href="chi-tiet-phong.html"><img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Standard - Giường 1m4"></a>
+                                        </div>
+                                        <div class="room-info">
+                                            <h4 class="room-title"><a href="chi-tiet-phong.html">Standard - Giường 1m4</a></h4>
+                                            <div class="room-features"><span>20m²</span><span>2 giường</span></div>
+                                            <p class="room-desc">nội dung miêu tả phòng</p>
+                                            <div class="room-price">400.000 đ - 700.000 đ</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="room-card">
+                                        <div class="room-image">
+                                            <a href="chi-tiet-phong.html"><img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Standard - Giường 1m6"></a>
+                                        </div>
+                                        <div class="room-info">
+                                            <h4 class="room-title"><a href="chi-tiet-phong.html">Standard - Giường 1m6</a></h4>
+                                            <div class="room-features"><span>25m²</span><span>2 giường</span></div>
+                                            <p class="room-desc">nội dung miêu tả phòng</p>
+                                            <div class="room-price">300.000 đ - 600.000 đ</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="room-card">
+                                        <div class="room-image">
+                                            <a href="chi-tiet-phong.html"><img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Standard - Giường 1m4"></a>
+                                        </div>
+                                        <div class="room-info">
+                                            <h4 class="room-title"><a href="chi-tiet-phong.html">Standard - Giường 1m4</a></h4>
+                                            <div class="room-features"><span>20m²</span><span>2 giường</span></div>
+                                            <p class="room-desc">nội dung miêu tả phòng</p>
+                                            <div class="room-price">400.000 đ - 700.000 đ</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="room-card">
+                                        <div class="room-image">
+                                            <a href="chi-tiet-phong.html"><img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Standard - Giường 1m6"></a>
+                                        </div>
+                                        <div class="room-info">
+                                            <h4 class="room-title"><a href="chi-tiet-phong.html">Standard - Giường 1m6</a></h4>
+                                            <div class="room-features"><span>25m²</span><span>2 giường</span></div>
+                                            <p class="room-desc">nội dung miêu tả phòng</p>
+                                            <div class="room-price">300.000 đ - 600.000 đ</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next standard-next custom-nav-btn"></div>
+                        <div class="swiper-button-prev standard-prev custom-nav-btn"></div>
+                    </div>
+                </div>
+
+                <!-- Family Category -->
+                <div class="room-category">
+                    <h3 class="category-title">Family:</h3>
+                    <div class="room-slider-wrapper">
+                        <div class="swiper room-swiper family-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="room-card">
+                                        <div class="room-image">
+                                            <a href="chi-tiet-phong.html"><img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Family - Giường 2m"></a>
+                                        </div>
+                                        <div class="room-info">
+                                            <h4 class="room-title"><a href="chi-tiet-phong.html">Family - Giường 2m</a></h4>
+                                            <div class="room-features"><span>25m²</span><span>1 Giường</span></div>
+                                            <p class="room-desc">nội dung miêu tả phòng</p>
+                                            <div class="room-price">600.000 đ - 700.000 đ</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="room-card">
+                                        <div class="room-image">
+                                            <a href="chi-tiet-phong.html"><img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Family - Giường 2m"></a>
+                                        </div>
+                                        <div class="room-info">
+                                            <h4 class="room-title"><a href="chi-tiet-phong.html">Family - Giường 2m</a></h4>
+                                            <div class="room-features"><span>25m²</span><span>1 Giường</span></div>
+                                            <p class="room-desc">nội dung miêu tả phòng</p>
+                                            <div class="room-price">600.000 đ - 700.000 đ</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="room-card">
+                                        <div class="room-image">
+                                            <a href="chi-tiet-phong.html"><img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Family - Giường 2m"></a>
+                                        </div>
+                                        <div class="room-info">
+                                            <h4 class="room-title"><a href="chi-tiet-phong.html">Family - Giường 2m</a></h4>
+                                            <div class="room-features"><span>25m²</span><span>1 Giường</span></div>
+                                            <p class="room-desc">nội dung miêu tả phòng</p>
+                                            <div class="room-price">600.000 đ - 700.000 đ</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="room-card">
+                                        <div class="room-image">
+                                            <a href="chi-tiet-phong.html"><img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Family - Giường 2m"></a>
+                                        </div>
+                                        <div class="room-info">
+                                            <h4 class="room-title"><a href="chi-tiet-phong.html">Family - Giường 2m</a></h4>
+                                            <div class="room-features"><span>25m²</span><span>1 Giường</span></div>
+                                            <p class="room-desc">nội dung miêu tả phòng</p>
+                                            <div class="room-price">600.000 đ - 700.000 đ</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next family-next custom-nav-btn"></div>
+                        <div class="swiper-button-prev family-prev custom-nav-btn"></div>
+                    </div>
+                </div>
+
+                <!-- VIP Category -->
+                <div class="room-category">
+                    <h3 class="category-title">Vip:</h3>
+                    <div class="room-slider-wrapper">
+                        <div class="swiper room-swiper vip-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="room-card">
+                                        <div class="room-image">
+                                            <a href="chi-tiet-phong.html"><img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="VIP - Giường 1m8"></a>
+                                        </div>
+                                        <div class="room-info">
+                                            <h4 class="room-title"><a href="chi-tiet-phong.html">VIP - Giường 1m8</a></h4>
+                                            <div class="room-features"><span>27m²</span><span>1 Giường</span></div>
+                                            <p class="room-desc">nội dung miêu tả phòng</p>
+                                            <div class="room-price">800.000 đ - 900.000 đ</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="room-card">
+                                        <div class="room-image">
+                                            <a href="chi-tiet-phong.html"><img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="VIP - Giường 1m8"></a>
+                                        </div>
+                                        <div class="room-info">
+                                            <h4 class="room-title"><a href="chi-tiet-phong.html">VIP - Giường 1m8</a></h4>
+                                            <div class="room-features"><span>27m²</span><span>1 Giường</span></div>
+                                            <p class="room-desc">nội dung miêu tả phòng</p>
+                                            <div class="room-price">800.000 đ - 900.000 đ</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="room-card">
+                                        <div class="room-image">
+                                            <a href="chi-tiet-phong.html"><img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="VIP - Giường 1m8"></a>
+                                        </div>
+                                        <div class="room-info">
+                                            <h4 class="room-title"><a href="chi-tiet-phong.html">VIP - Giường 1m8</a></h4>
+                                            <div class="room-features"><span>27m²</span><span>1 Giường</span></div>
+                                            <p class="room-desc">nội dung miêu tả phòng</p>
+                                            <div class="room-price">800.000 đ - 900.000 đ</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="room-card">
+                                        <div class="room-image">
+                                            <a href="chi-tiet-phong.html"><img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="VIP - Giường 1m8"></a>
+                                        </div>
+                                        <div class="room-info">
+                                            <h4 class="room-title"><a href="chi-tiet-phong.html">VIP - Giường 1m8</a></h4>
+                                            <div class="room-features"><span>27m²</span><span>1 Giường</span></div>
+                                            <p class="room-desc">nội dung miêu tả phòng</p>
+                                            <div class="room-price">800.000 đ - 900.000 đ</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next vip-next custom-nav-btn"></div>
+                        <div class="swiper-button-prev vip-prev custom-nav-btn"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== GALLERY SECTION ===== -->
+        <section class="section-gallery">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="title-bar"></span>Thư viện hình ảnh Thành Danh Hotel
+                </h2>
+                <div class="gallery-grid">
+                    <a href="assets/images/room1.png" data-fancybox="gallery" class="gallery-item">
+                        <img src="assets/images/room1.png" alt="Hình ảnh khách sạn 1">
+                    </a>
+                    <a href="assets/images/room2.png" data-fancybox="gallery" class="gallery-item">
+                        <img src="assets/images/room2.png" alt="Hình ảnh khách sạn 2">
+                    </a>
+                    <a href="assets/images/room3.png" data-fancybox="gallery" class="gallery-item">
+                        <img src="assets/images/room3.png" alt="Hình ảnh khách sạn 3">
+                    </a>
+                    <a href="assets/images/room4.png" data-fancybox="gallery" class="gallery-item">
+                        <img src="assets/images/room4.png" alt="Hình ảnh khách sạn 4">
+                    </a>
+                    <a href="assets/images/beach_banner.png" data-fancybox="gallery" class="gallery-item">
+                        <img src="assets/images/beach_banner.png" alt="Bãi biển">
+                    </a>
+                    <a href="assets/images/contact_entrance.png" data-fancybox="gallery" class="gallery-item">
+                        <img src="assets/images/contact_entrance.png" alt="Lối vào khách sạn">
+                    </a>
+                    <a href="assets/images/room1.png" data-fancybox="gallery" class="gallery-item">
+                        <img src="assets/images/room1.png" alt="Phòng nghỉ">
+                    </a>
+                    <a href="assets/images/room2.png" data-fancybox="gallery" class="gallery-item">
+                        <img src="assets/images/room2.png" alt="Phòng nghỉ 2">
+                    </a>
+                    <a href="assets/images/room3.png" data-fancybox="gallery" class="gallery-item">
+                        <img src="assets/images/room3.png" alt="Phòng nghỉ 3">
+                    </a>
+                    <a href="assets/images/room4.png" data-fancybox="gallery" class="gallery-item gallery-item--more">
+                        <img src="assets/images/room4.png" alt="Xem thêm ảnh">
+                        <div class="gallery-more">+5</div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== TESTIMONIALS SECTION ===== -->
+        <section class="section-testimonials">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="title-bar"></span>Cảm nhận từ khách hàng
+                </h2>
+                <div class="testimonial-slider-wrapper">
+                    <div class="swiper testimonial-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="premium-review-card">
+                                    <div class="quote-icon"><i data-lucide="quote"></i></div>
+                                    <div class="rating-stars"><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i></div>
+                                    <p class="review-text">"Một kỳ nghỉ vượt ngoài mong đợi! Phòng ốc sang trọng, view nhìn thẳng ra biển cực kỳ lãng mạn. Đặc biệt nhân viên tinh tế và nhiệt tình."</p>
+                                    <div class="reviewer-info">
+                                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Avatar">
+                                        <div class="reviewer-details"><h4>Nguyễn Thị Lan</h4><span>Khách du lịch</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="premium-review-card">
+                                    <div class="quote-icon"><i data-lucide="quote"></i></div>
+                                    <div class="rating-stars"><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i></div>
+                                    <p class="review-text">"Khách sạn có thiết kế hiện đại và vô cùng tinh tế. Bữa sáng buffet rất đa dạng món ngon. Không gian thoáng đãng thật sự là điểm nhấn."</p>
+                                    <div class="reviewer-info">
+                                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Avatar">
+                                        <div class="reviewer-details"><h4>Trần Văn Minh</h4><span>Chuyên gia công tác</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="premium-review-card">
+                                    <div class="quote-icon"><i data-lucide="quote"></i></div>
+                                    <div class="rating-stars"><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i></div>
+                                    <p class="review-text">"Không gian yên tĩnh, riêng tư và sang trọng. Tôi rất ấn tượng với dịch vụ tại đây. Chắc chắn gia đình tôi sẽ quay lại vào dịp gần nhất."</p>
+                                    <div class="reviewer-info">
+                                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Avatar">
+                                        <div class="reviewer-details"><h4>Lê Hoàng Hà</h4><span>Kỳ nghỉ gia đình</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="premium-review-card">
+                                    <div class="quote-icon"><i data-lucide="quote"></i></div>
+                                    <div class="rating-stars"><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i></div>
+                                    <p class="review-text">"Phục vụ vô cùng chu đáo. Nhân viên hướng dẫn nhiệt tình các địa điểm du lịch xung quanh. Giá cả hợp lý so với dịch vụ nhận được."</p>
+                                    <div class="reviewer-info">
+                                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Avatar">
+                                        <div class="reviewer-details"><h4>Phạm Thị Hoa</h4><span>Khách du lịch</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="premium-review-card">
+                                    <div class="quote-icon"><i data-lucide="quote"></i></div>
+                                    <div class="rating-stars"><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i></div>
+                                    <p class="review-text">"Gia đình tôi đã có những ngày nghỉ tuyệt vời ở đây. Các bé rất thích không gian khách sạn. Một lựa chọn tuyệt vời tại Đồng Hới."</p>
+                                    <div class="reviewer-info">
+                                        <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Avatar">
+                                        <div class="reviewer-details"><h4>Vũ Minh Tuyết</h4><span>Kỳ nghỉ gia đình</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev custom-nav-btn testimonial-prev"></div>
+                    <div class="swiper-button-next custom-nav-btn testimonial-next"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== BLOG SECTION ===== -->
+        <section class="section-blog">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="title-bar"></span>Bài viết nổi bật
+                </h2>
+                <div class="blog-slider-wrapper">
+                    <div class="swiper blog-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="chi-tiet-bai-viet.html" class="blog-card">
+                                    <div class="blog-image"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Blog 1"></div>
+                                    <div class="blog-content">
+                                        <span class="blog-category">Cẩm nang du lịch</span>
+                                        <h4 class="blog-title">Cẩm nang du lịch Đồng Hới tự túc từ A đến Z</h4>
+                                        <p class="blog-excerpt">Khám phá trọn vẹn vẻ đẹp hoang sơ của thành phố biển Đồng Hới với cẩm nang lưu trú, ăn uống và vui chơi cực kỳ chi tiết.</p>
+                                        <span class="blog-more">Xem chi tiết <i data-lucide="arrow-right"></i></span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="chi-tiet-bai-viet.html" class="blog-card">
+                                    <div class="blog-image"><img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Blog 2"></div>
+                                    <div class="blog-content">
+                                        <span class="blog-category">Kinh nghiệm du lịch</span>
+                                        <h4 class="blog-title">Kinh nghiệm khám phá Động Phong Nha 1 ngày</h4>
+                                        <p class="blog-excerpt">Chia sẻ những kinh nghiệm xương máu khi tham quan kỳ quan Động Phong Nha và Động Thiên Đường siêu tiết kiệm.</p>
+                                        <span class="blog-more">Xem chi tiết <i data-lucide="arrow-right"></i></span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="chi-tiet-bai-viet.html" class="blog-card">
+                                    <div class="blog-image"><img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Blog 3"></div>
+                                    <div class="blog-content">
+                                        <span class="blog-category">Khám phá</span>
+                                        <h4 class="blog-title">Top 5 bãi biển hoang sơ đẹp nhất tại Quảng Bình</h4>
+                                        <p class="blog-excerpt">Ngoài Nhật Lệ, Quảng Bình còn sở hữu những bãi biển xanh trong vắt và vô cùng yên bình đang chờ bạn khám phá.</p>
+                                        <span class="blog-more">Xem chi tiết <i data-lucide="arrow-right"></i></span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="chi-tiet-bai-viet.html" class="blog-card">
+                                    <div class="blog-image"><img src="https://images.unsplash.com/photo-1504609813442-a8924e83f76e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Blog 4"></div>
+                                    <div class="blog-content">
+                                        <span class="blog-category">Cẩm nang du lịch</span>
+                                        <h4 class="blog-title">Ẩm thực Quảng Bình — những món không thể bỏ qua</h4>
+                                        <p class="blog-excerpt">Từ bún bò Huế cho đến các đặc sản biển tươi ngon, ẩm thực Quảng Bình sẽ để lại ấn tượng khó quên.</p>
+                                        <span class="blog-more">Xem chi tiết <i data-lucide="arrow-right"></i></span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev custom-nav-btn blog-prev"></div>
+                    <div class="swiper-button-next custom-nav-btn blog-next"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SOCIAL SECTION ===== -->
+        <section class="section-social">
+            <div class="social-bg-decor"></div>
+            <div class="container">
+                <h2 class="section-social-title">XEM CHÚNG TÔI TRÊN SOCIAL</h2>
+                <div class="social-slider-wrapper">
+                    <div class="swiper social-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="social-card">
+                                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Social 1" class="social-video-thumb">
+                                    <span class="social-date-badge">20/08</span>
+                                    <div class="social-play-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg></div>
+                                    <div class="social-caption-overlay"><p>Khám phá không gian nghỉ dưỡng tuyệt vời tại Thành Danh Hotel</p></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="social-card">
+                                    <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Social 2" class="social-video-thumb">
+                                    <span class="social-date-badge">19/08</span>
+                                    <div class="social-play-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg></div>
+                                    <div class="social-caption-overlay"><p>Buổi sáng tuyệt vời bên cửa sổ nhìn ra sông Nhật Lệ</p></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="social-card">
+                                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Social 3" class="social-video-thumb">
+                                    <span class="social-date-badge">18/08</span>
+                                    <div class="social-play-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg></div>
+                                    <div class="social-caption-overlay"><p>Phòng Superior view biển đẹp mê ly</p></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="social-card">
+                                    <img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Social 4" class="social-video-thumb">
+                                    <span class="social-date-badge">15/08</span>
+                                    <div class="social-play-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg></div>
+                                    <div class="social-caption-overlay"><p>Hồ bơi ngoài trời mang lại cảm giác thư giãn tuyệt vời</p></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="social-card">
+                                    <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Social 5" class="social-video-thumb">
+                                    <span class="social-date-badge">12/08</span>
+                                    <div class="social-play-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg></div>
+                                    <div class="social-caption-overlay"><p>Không gian nhà hàng ấm cúng và sang trọng</p></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev custom-nav-btn-white social-prev"></div>
+                    <div class="swiper-button-next custom-nav-btn-white social-next"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== FAQ SECTION ===== -->
+        <section class="section-faq">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="title-bar"></span>Câu hỏi thường gặp
+                </h2>
+                <div class="faq-container">
+                    <div class="faq-item active">
+                        <div class="faq-question">
+                            Giờ nhận phòng và trả phòng là mấy giờ?
+                            <i data-lucide="chevron-down" width="20" height="20"></i>
+                        </div>
+                        <div class="faq-answer">
+                            Tại Thành Danh hotel, giờ nhận phòng là 14h chiều và giờ trả phòng là trước 12h chiều.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            Có được phép mang theo thú cưng không?
+                            <i data-lucide="chevron-down" width="20" height="20"></i>
+                        </div>
+                        <div class="faq-answer">
+                            Rất tiếc, Thành Danh Hotel không cho phép mang thú cưng vào khuôn viên khách sạn để đảm bảo sự thoải mái cho tất cả khách lưu trú.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            Có chính sách hoặc ưu đãi gì cho trẻ em không?
+                            <i data-lucide="chevron-down" width="20" height="20"></i>
+                        </div>
+                        <div class="faq-answer">
+                            Trẻ em dưới 6 tuổi được ở miễn phí khi ngủ chung giường với người lớn. Từ 6 - 11 tuổi sẽ tính phụ thu. Từ 12 tuổi trở lên tính phí như người lớn.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            Tôi có thể hủy hoặc thay đổi đặt phòng không?
+                            <i data-lucide="chevron-down" width="20" height="20"></i>
+                        </div>
+                        <div class="faq-answer">
+                            Báo trước 7 ngày: Miễn phí hủy. Báo trước 3-6 ngày: Mất cọc 30% tổng tiền phòng. Vui lòng liên hệ trực tiếp hotline để được hỗ trợ tốt nhất.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-col-info">
+                        <div class="footer-logo">
+                            <img src="assets/images/Logo-Thành Danh ( gốc ).png" alt="Thành Danh Hotel Logo">
+                        </div>
+                        <h4 class="company-name">CÔNG TY TNHH THƯƠNG MẠI VÀ XÂY DỰNG<br>TỔNG HỢP THÀNH DANH</h4>
+                        <p>Mã số doanh nghiệp: 3101069684</p>
+                        <p>Đăng ký lần đầu: ngày 10 tháng 05 năm 2019</p>
+                        <p>Đơn vị cấp: SỞ TÀI CHÍNH TỈNH QUẢNG TRỊ<br>PHÒNG ĐĂNG KÝ KINH DOANH</p>
+                        <p>Trụ sở chính: 42 Đường Thành Công, Đồng Hới</p>
+                        <div class="footer-contact-list">
+                            <p><i data-lucide="mail" width="16" height="16"></i> thanhdanhqb86@gmail.com</p>
+                            <p><i data-lucide="phone" width="16" height="16"></i> 0822515558</p>
+                            <p><i data-lucide="map-pin" width="16" height="16"></i> 42 Đường Thành Công, Đồng Hới</p>
+                        </div>
+                    </div>
+                    <div class="footer-col-links">
+                        <h4 class="footer-title">LIÊN KẾT NHANH</h4>
+                        <ul class="footer-nav">
+                            <li><a href="gioi-thieu.html">VỀ CHÚNG TÔI</a></li>
+                            <li><a href="lien-he.html">LIÊN HỆ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-social">
+                        <h4 class="footer-title">LIÊN KẾT NHANH</h4>
+                        <div class="fb-page-container">
+                            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D61587188752310&tabs=&width=340&height=130&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="100%" height="130" class="fb-iframe" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                        </div>
+                        <div class="footer-partners">
+                            <a href="#"><img src="assets/images/booking.png" alt="Booking.com" class="partner-footer"></a>
+                            <a href="#"><img src="assets/images/expedia.png" alt="Expedia" class="partner-footer"></a>
+                            <a href="#"><img src="assets/images/trip.png" alt="Trip.com" class="partner-footer"></a>
+                            <a href="#"><img src="assets/images/agoda.png" alt="Agoda" class="partner-footer partner-footer-bg"></a>
+                            <a href="#"><img src="assets/images/traveloka.png" alt="Traveloka" class="partner-footer partner-footer-bg"></a>
+                            <a href="#"><img src="assets/images/tripadvisor.png" alt="TripAdvisor" class="partner-footer partner-footer-lg"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="assets/js/main.js?v=20"></script>
+    <script>
+        // Counter function for booking form
+        function changeCount(type, delta) {
+            var id = type + '-val';
+            var el = document.getElementById(id);
+            if (!el) return;
+            var min = (type === 'rooms' || type === 'adults') ? 1 : 0;
+            var val = parseInt(el.textContent) + delta;
+            if (val < min) val = min;
+            el.textContent = val;
+        }
+
+
+    </script>
+</body>
+</html>

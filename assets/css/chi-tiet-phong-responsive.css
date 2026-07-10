@@ -1,0 +1,79 @@
+/* Responsive styles specific to chi-tiet-phong.html */
+
+@media (max-width: 900px) {
+
+            .rd-main-swiper {
+                height: 300px;
+            }
+            .rd-thumb-swiper {
+                height: 80px;
+            }
+
+            .rd-layout {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            .rd-amenities-col {
+                order: 2; /* Put amenities below info on mobile */
+            }
+            .rd-info-col {
+                order: 1; /* Info/Policy on top */
+            }
+            .rd-amenity-list {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 15px;
+            }
+            .rd-capacity {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 15px;
+            }
+            .rd-free-badge {
+                margin-left: 0;
+                margin-top: 5px;
+            }
+            .rd-checkin-row {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+            .rd-policy-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+            .rd-booking {
+                flex-direction: column;
+                align-items: stretch;
+                text-align: center;
+                gap: 15px;
+                position: relative;
+                top: 0;
+                padding: 20px;
+            }
+            .rd-booking-btn {
+                width: 100%;
+                justify-content: center;
+            }
+            .rd-similar-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 15px;
+            }
+            .rd-content {
+                padding: 20px 0;
+            }
+        }
+
+
+
+        @media (max-width: 480px) {
+            .rd-amenity-list {
+                grid-template-columns: 1fr;
+            }
+            .rd-booking-price .amount {
+                font-size: 1.5rem;
+            }
+        }
+
+
+

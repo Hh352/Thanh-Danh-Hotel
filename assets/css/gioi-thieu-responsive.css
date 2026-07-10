@@ -1,0 +1,146 @@
+/* Responsive styles specific to gioi-thieu.html */
+
+@media (max-width: 768px) {
+            .section-hero-about { height: 360px; }
+            .hero-about-title { font-size: 22px; }
+
+            /* Stats bar: 2×2 grid, compact */
+            .about-stats-bar { padding: 20px 0; }
+            .about-stats-inner { flex-wrap: wrap; }
+            .about-stat-item {
+                flex: 0 0 50%;
+                padding: 14px 10px;
+                border-right: none;
+                border-bottom: 1px solid rgba(255,255,255,0.12);
+            }
+            .about-stat-item:nth-child(odd) { border-right: 1px solid rgba(255,255,255,0.12); }
+            .about-stat-item:nth-child(3),
+            .about-stat-item:nth-child(4) { border-bottom: none; }
+            .about-stat-number { font-size: 26px; }
+            .about-stat-label { font-size: 11px; }
+
+            /* Sections: tighter padding on mobile */
+            .section-about, .section-mission-vision, .section-core-values,
+            .section-brand-values, .section-customers, .section-explore { padding: 44px 0; }
+
+            .about-grid { grid-template-columns: 1fr; gap: 32px; }
+            .about-img-main { height: 260px; }
+            .about-img-badge { bottom: -16px; left: 16px; }
+
+            /* Mission/Vision cards: shorter, content-based height */
+            .mv-grid { grid-template-columns: 1fr; gap: 16px; }
+            .mv-card { height: auto; min-height: 240px; display: flex; align-items: flex-end; }
+            .mv-content { padding: 24px 20px; position: relative; height: auto; }
+            .mv-title { font-size: 18px; }
+            .mv-section-tag { margin-bottom: 12px; }
+            .mv-desc { font-size: 13px; }
+
+            .brand-values-grid-modern { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+            .brand-card-modern { padding: 20px 10px; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; }
+            .brand-title { font-size: 13px; text-align: center; margin-bottom: 8px; }
+            .brand-card-modern p { 
+                font-size: 11px; 
+                text-align: center; 
+                line-height: 1.5; 
+                display: -webkit-box;
+                -webkit-line-clamp: 4;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                margin: 0;
+            }
+            .brand-icon { width: 40px; height: 40px; margin-bottom: 12px; border-radius: 10px; }
+            .brand-icon svg { width: 20px; height: 20px; }
+            .testimonial-slider-wrapper { padding: 0 10px; }
+            .explore-grid { grid-template-columns: 1fr; gap: 32px; }
+            .explore-image-col { position: static; }
+            .explore-image { height: 240px; }
+        }
+
+
+
+        @media (max-width: 480px) {
+            /* Keep 2-column stats on small phones too */
+            .about-stat-item { flex: 0 0 50%; }
+        }
+
+
+
+    
+        
+        
+        
+        /* Global Section Title */
+        .global-section-title {
+            text-align: center !important;
+            position: relative;
+            margin-bottom: 50px;
+            padding-bottom: 15px;
+            font-size: clamp(24px, 4vw, 36px);
+            font-weight: 800;
+            color: #0b1d3a;
+            text-transform: uppercase;
+            border-left: none !important;
+            padding-left: 0 !important;
+        }
+
+
+
+        
+        /* Make sure titles on dark backgrounds are white */
+        .section-hero .global-section-title,
+        .section-hero-blog .global-section-title,
+        .section-hero-about .global-section-title,
+        .section-hero-contact .global-section-title,
+        .section-hero-rooms .global-section-title,
+        .section-hero-offers .global-section-title,
+        .section-customers .global-section-title,
+        .section-social .global-section-title,
+        .hero-wrapper .global-section-title,
+        .page-hero .global-section-title {
+            color: #ffffff !important;
+        }
+
+
+
+
+        .global-section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, #d4af37, #f2c85b);
+            border-radius: 2px;
+        }
+
+
+
+
+        
+        /* Make sure titles on dark backgrounds are white */
+        .section-social .global-section-title,
+        .hero-wrapper .global-section-title,
+        .page-hero .global-section-title,
+        .section-hero .global-section-title {
+            color: #ffffff !important;
+        }
+
+
+
+
+        .global-section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, #d4af37, #f2c85b);
+            border-radius: 2px;
+        }
+
+
+

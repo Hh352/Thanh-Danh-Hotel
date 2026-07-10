@@ -1,0 +1,126 @@
+/* Responsive styles specific to uu-dai.html */
+
+@media(max-width: 768px){
+            .section-hero-offers { height: 360px; }
+            .offers-hero-title { font-size: clamp(26px, 7vw, 36px); }
+            .section-offers-list { padding: 60px 0 80px; }
+            .offers-section-header { margin-bottom: 48px; }
+            .offer-card { 
+                flex-direction: column; 
+            }
+            .offer-image { 
+                width: 100%;
+                max-width: 100%;
+                height: 240px;
+                margin: 0;
+            }
+            .offer-content { 
+                padding: 30px; 
+                min-height: auto;
+                width: 100%;
+            }
+            .offer-title { font-size: 17px; margin-bottom: 15px; }
+            .offer-features { margin-bottom: 20px; }
+            .offers-grid { gap: 40px; }
+            .offer-status-inline { margin-left: 0; }
+        }
+
+
+
+        @media(max-width: 480px){
+            .section-hero-offers { height: 320px; }
+            .offers-hero-label { font-size: 10px; letter-spacing: 2.5px; }
+            .offers-hero-title { letter-spacing: 1px; }
+            .offers-hero-sub { font-size: 14px; }
+            .section-offers-list { padding: 50px 0 70px; }
+            .offer-image {
+                height: 200px;
+            }
+            .offer-footer { 
+                flex-direction: row; 
+                gap: 15px;
+            }
+            .offer-content { padding: 20px; }
+        }
+
+
+
+    
+        
+        
+        
+        /* Global Section Title */
+        .global-section-title {
+            text-align: center !important;
+            position: relative;
+            margin-bottom: 50px;
+            padding-bottom: 15px;
+            font-size: clamp(24px, 4vw, 36px);
+            font-weight: 800;
+            color: #0b1d3a;
+            text-transform: uppercase;
+            border-left: none !important;
+            padding-left: 0 !important;
+        }
+
+
+
+        
+        /* Make sure titles on dark backgrounds are white */
+        .section-hero .global-section-title,
+        .section-hero-blog .global-section-title,
+        .section-hero-about .global-section-title,
+        .section-hero-contact .global-section-title,
+        .section-hero-rooms .global-section-title,
+        .section-hero-offers .global-section-title,
+        .section-customers .global-section-title,
+        .section-social .global-section-title,
+        .hero-wrapper .global-section-title,
+        .page-hero .global-section-title {
+            color: #ffffff !important;
+        }
+
+
+
+
+        .global-section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, #d4af37, #f2c85b);
+            border-radius: 2px;
+        }
+
+
+
+
+        
+        /* Make sure titles on dark backgrounds are white */
+        .section-social .global-section-title,
+        .hero-wrapper .global-section-title,
+        .page-hero .global-section-title,
+        .section-hero .global-section-title {
+            color: #ffffff !important;
+        }
+
+
+
+
+        .global-section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, #d4af37, #f2c85b);
+            border-radius: 2px;
+        }
+
+
+
