@@ -1,3 +1,26 @@
+/* ---- Shared header/footer classes ---- */
+.icon-gold       { color: #F2B203; }
+.flag-img        { height: 18px; object-fit: cover; cursor: pointer; }
+.flag-img-drawer { height: 20px; object-fit: cover; cursor: pointer; }
+.logo-img-lg     { height: 80px; object-fit: contain; }
+.logo-img-sm     { height: 40px; object-fit: contain; }
+.logo-img-drawer { height: 36px; object-fit: contain; }
+.partner-img     { height: 20px; }
+.partner-img-sm  { height: 18px; }
+.partner-img-bg  { background: #fff; padding: 2px 4px; border-radius: 4px; }
+.header-main-inner { display: flex; justify-content: space-between; align-items: center; }
+.mobile-logo     { display: none; }
+.main-nav.header-nav-row { flex: 1; border-top: none; padding: 15px 0; }
+.mobile-drawer-extra { display: none; }
+.drawer-divider  { margin: 24px 20px 12px; border-top: 1px solid rgba(0,0,0,0.1); }
+.drawer-flags    { display: flex; gap: 12px; padding: 0 20px; margin-bottom: 16px; }
+.drawer-partners { display: flex; flex-wrap: wrap; gap: 10px; padding: 12px 20px; background: #f8fafc; margin: 0 10px; border-radius: 8px; align-items: center; }
+.fb-page-container { background: white; border-radius: 4px; overflow: hidden; margin-bottom: 15px; }
+.fb-iframe { border: none; overflow: hidden; max-width: 340px; }
+.partner-footer    { height: 25px; border-radius: 4px; }
+.partner-footer-bg { background: white; padding: 3px 6px; border-radius: 4px; box-sizing: border-box; height: 25px; }
+.partner-footer-lg { height: 35px; border-radius: 4px; }
+
 /* Responsive styles specific to gioi-thieu.html */
 
 @media (max-width: 768px) {
@@ -144,3 +167,34 @@
 
 
 
+
+/* Responsive Customer Gallery */
+@media (max-width: 991px) {
+    .customer-gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .customer-gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 180px;
+    }
+    .c-gallery-item.wide {
+        grid-column: span 2;
+    }
+}
+
+@media (max-width: 480px) {
+    .customer-gallery-grid {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 220px;
+    }
+    .c-gallery-item.wide {
+        grid-column: span 1;
+    }
+    .c-gallery-item.tall {
+        grid-row: span 1;
+    }
+}

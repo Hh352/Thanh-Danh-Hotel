@@ -417,3 +417,11 @@
 }
 
 
+
+@media (max-width: 768px) {
+    .footer-bottom-inner {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+}

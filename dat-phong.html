@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặt Phòng | Thành Danh Hotel</title>
+    <meta name="description" content="Đặt phòng trực tuyến tại Thành Danh Hotel - Đồng Hới, Quảng Bình. Nhanh chóng, tiện lợi, xác nhận ngay.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css?v=20">
+    <link rel="stylesheet" href="assets/css/responsive.css?v=20">
+    <link rel="stylesheet" href="assets/css/booking.css?v=1">
+</head>
+<body>
+
+    <!-- Header Top -->
+    <div class="header-top">
+        <div class="container">
+            <div class="top-contact-left">
+                <i data-lucide="map-pin" width="14" height="14" class="icon-gold"></i>
+                42 Đường Thành Công, Đồng Hới
+            </div>
+            <div class="top-contact-right">
+                <i data-lucide="phone-call" width="14" height="14" class="icon-gold"></i>
+                0822515558
+            </div>
+        </div>
+    </div>
+
+    <!-- Header Middle -->
+    <div class="header-middle">
+        <div class="container">
+            <div class="header-top-row">
+                <div class="header-left-flags">
+                    <img src="https://flagcdn.com/w40/vn.png" alt="VN" title="Tiếng Việt" class="flag-img">
+                    <img src="https://flagcdn.com/w40/gb.png" alt="EN" title="English" class="flag-img">
+                </div>
+                <div class="header-center-logo">
+                    <a href="index.html">
+                        <img src="assets/images/Logo-Thành Danh ( gốc ).png" alt="Thành Danh Hotel Logo" class="logo-img-lg">
+                    </a>
+                </div>
+                <div class="header-right-partners">
+                    <a href="#"><img src="assets/images/facebook.png" alt="Facebook" class="partner-img"></a>
+                    <a href="#"><img src="assets/images/zalo.png" alt="Zalo" class="partner-img"></a>
+                    <a href="#"><img src="assets/images/instagram.png" alt="Instagram" class="partner-img"></a>
+                    <a href="#"><img src="assets/images/booking.png" alt="Booking.com" class="partner-img"></a>
+                    <a href="#"><img src="assets/images/agoda.png" alt="Agoda" class="partner-img"></a>
+                    <a href="#"><img src="assets/images/traveloka.png" alt="Traveloka" class="partner-img"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header (Sticky Nav) -->
+    <header class="header-main">
+        <div class="container header-main-inner">
+            <a href="index.html" class="mobile-logo">
+                <img src="assets/images/Logo-Thành Danh ( gốc ).png" alt="Logo" class="logo-img-sm">
+            </a>
+            <nav class="main-nav header-nav-row">
+                <div class="drawer-header">
+                    <a href="index.html"><img src="assets/images/Logo-Thành Danh ( gốc ).png" alt="Logo" class="logo-img-drawer"></a>
+                    <button class="drawer-close-btn" id="drawer-close-btn" aria-label="Đóng menu">
+                        <i data-lucide="x"></i>
+                    </button>
+                </div>
+                <ul>
+                    <li><a href="index.html">TRANG CHỦ</a></li>
+                    <li><a href="gioi-thieu.html">GIỚI THIỆU</a></li>
+                    <li><a href="phong.html">PHÒNG</a></li>
+                    <li><a href="uu-dai.html">ƯU ĐÃI</a></li>
+                    <li><a href="bai-viet.html">BÀI VIẾT</a></li>
+                    <li><a href="lien-he.html">LIÊN HỆ</a></li>
+                </ul>
+                <div class="mobile-drawer-extra">
+                    <div class="drawer-divider"></div>
+                    <div class="drawer-flags">
+                        <img src="https://flagcdn.com/w40/vn.png" alt="VN" class="flag-img-drawer">
+                        <img src="https://flagcdn.com/w40/gb.png" alt="EN" class="flag-img-drawer">
+                    </div>
+                </div>
+            </nav>
+            <button class="mobile-menu-btn"><i data-lucide="menu"></i></button>
+        </div>
+    </header>
+
+    <main class="page-booking">
+
+        <!-- ===== HERO ===== -->
+        <section class="bk-hero">
+            <div class="bk-hero__overlay"></div>
+            <div class="container">
+                <div class="bk-breadcrumb">
+                    <a href="index.html">Trang chủ</a>
+                    <i data-lucide="chevron-right" class="bk-breadcrumb__sep"></i>
+                    <a href="phong.html">Phòng</a>
+                    <i data-lucide="chevron-right" class="bk-breadcrumb__sep"></i>
+                    <span>Đặt phòng</span>
+                </div>
+                <h1 class="bk-hero__title">ĐẶT / NHẬN PHÒNG NHANH</h1>
+                <p class="bk-hero__sub">Điền thông tin bên dưới để hoàn tất đặt phòng. Chúng tôi sẽ xác nhận trong vòng 30 phút.</p>
+            </div>
+        </section>
+
+        <!-- ===== BOOKING FORM ===== -->
+        <section class="bk-section">
+            <div class="container">
+                <div class="bk-layout">
+
+                    <!-- ===== MAIN FORM ===== -->
+                    <div class="bk-main">
+                        <form class="bk-form" id="bookingMainForm" novalidate>
+
+                            <!-- Step 1: Thông tin phòng -->
+                            <div class="bk-card">
+                                <div class="bk-card__header">
+                                    <span class="bk-card__step">1</span>
+                                    <h2 class="bk-card__title">Thông tin phòng</h2>
+                                </div>
+                                <div class="bk-card__body">
+                                    <div class="bk-row">
+                                        <div class="bk-field">
+                                            <label class="bk-label" for="room-type">
+                                                Hạng phòng <span class="bk-required">*</span>
+                                            </label>
+                                            <div class="bk-select-wrap">
+                                                <select class="bk-select" id="room-type" required>
+                                                    <option value="">-- Chọn hạng phòng --</option>
+                                                    <option value="standard">Standard</option>
+                                                    <option value="family">Family</option>
+                                                    <option value="vip">VIP</option>
+                                                </select>
+                                                <i data-lucide="chevron-down" class="bk-select-icon"></i>
+                                            </div>
+                                        </div>
+                                        <div class="bk-field">
+                                            <label class="bk-label" for="room-number">
+                                                Số phòng <span class="bk-required">*</span>
+                                            </label>
+                                            <div class="bk-select-wrap">
+                                                <select class="bk-select" id="room-number" required>
+                                                    <option value="">-- Chọn phòng --</option>
+                                                    <option value="304">304</option>
+                                                    <option value="305">305</option>
+                                                    <option value="306">306</option>
+                                                    <option value="401">401</option>
+                                                    <option value="402">402</option>
+                                                    <option value="501">501</option>
+                                                    <option value="601">601</option>
+                                                    <option value="602">602</option>
+                                                    <option value="701">701 (VIP)</option>
+                                                </select>
+                                                <i data-lucide="chevron-down" class="bk-select-icon"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Hình thức lưu trú -->
+                                    <div class="bk-field bk-field--full">
+                                        <label class="bk-label">Hình thức lưu trú <span class="bk-required">*</span></label>
+                                        <div class="bk-radio-group">
+                                            <label class="bk-radio-item bk-radio-item--active" id="radio-label-hour">
+                                                <input type="radio" name="stay-type" value="hour" class="bk-radio-input" checked>
+                                                <span class="bk-radio-box"></span>
+                                                <span class="bk-radio-text">
+                                                    <i data-lucide="clock" class="bk-radio-icon"></i> Theo giờ
+                                                </span>
+                                            </label>
+                                            <label class="bk-radio-item" id="radio-label-day">
+                                                <input type="radio" name="stay-type" value="day" class="bk-radio-input">
+                                                <span class="bk-radio-box"></span>
+                                                <span class="bk-radio-text">
+                                                    <i data-lucide="sun" class="bk-radio-icon"></i> Theo ngày
+                                                </span>
+                                            </label>
+                                            <label class="bk-radio-item" id="radio-label-month">
+                                                <input type="radio" name="stay-type" value="month" class="bk-radio-input">
+                                                <span class="bk-radio-box"></span>
+                                                <span class="bk-radio-text">
+                                                    <i data-lucide="calendar" class="bk-radio-icon"></i> Theo tháng
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Step 2: Thời gian -->
+                            <div class="bk-card">
+                                <div class="bk-card__header">
+                                    <span class="bk-card__step">2</span>
+                                    <h2 class="bk-card__title">Thời gian lưu trú</h2>
+                                </div>
+                                <div class="bk-card__body">
+                                    <div class="bk-row">
+                                        <div class="bk-field">
+                                            <label class="bk-label" for="checkin-time">
+                                                <i data-lucide="log-in" class="bk-label-icon"></i>
+                                                Thời gian nhận phòng <span class="bk-required">*</span>
+                                            </label>
+                                            <input type="datetime-local" class="bk-input" id="checkin-time" required>
+                                        </div>
+                                        <div class="bk-field">
+                                            <label class="bk-label" for="checkout-time">
+                                                <i data-lucide="log-out" class="bk-label-icon"></i>
+                                                Thời gian trả phòng <span class="bk-required">*</span>
+                                            </label>
+                                            <input type="datetime-local" class="bk-input" id="checkout-time" required>
+                                        </div>
+                                    </div>
+
+                                    <!-- Dự kiến & Thành tiền (auto tính) -->
+                                    <div class="bk-estimate-row">
+                                        <div class="bk-estimate-item">
+                                            <span class="bk-estimate-label">
+                                                <i data-lucide="timer" class="bk-estimate-icon"></i>
+                                                Dự kiến lưu trú
+                                            </span>
+                                            <span class="bk-estimate-value" id="stay-duration">— giờ</span>
+                                        </div>
+                                        <div class="bk-estimate-sep"></div>
+                                        <div class="bk-estimate-item bk-estimate-item--price">
+                                            <span class="bk-estimate-label">
+                                                <i data-lucide="banknote" class="bk-estimate-icon"></i>
+                                                Khách cần trả
+                                            </span>
+                                            <span class="bk-estimate-value bk-estimate-value--gold" id="total-price">— đ</span>
+                                        </div>
+                                        <div class="bk-estimate-item bk-estimate-item--total">
+                                            <span class="bk-estimate-label">
+                                                <i data-lucide="receipt" class="bk-estimate-icon"></i>
+                                                Khách thanh toán
+                                            </span>
+                                            <span class="bk-estimate-value bk-estimate-value--navy" id="paid-price">0 đ</span>
+                                        </div>
+                                    </div>
+
+                                    <p class="bk-estimate-note">
+                                        <i data-lucide="info" class="bk-note-icon"></i>
+                                        Giá chỉ mang tính tham khảo. Thành tiền chính thức sẽ được xác nhận qua điện thoại/email.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Step 3: Thông tin khách -->
+                            <div class="bk-card">
+                                <div class="bk-card__header">
+                                    <span class="bk-card__step">3</span>
+                                    <h2 class="bk-card__title">Thông tin khách hàng</h2>
+                                </div>
+                                <div class="bk-card__body">
+                                    <div class="bk-row">
+                                        <div class="bk-field">
+                                            <label class="bk-label" for="guest-name">
+                                                Họ và tên <span class="bk-required">*</span>
+                                            </label>
+                                            <div class="bk-input-wrap">
+                                                <i data-lucide="user" class="bk-input-icon"></i>
+                                                <input type="text" class="bk-input bk-input--icon" id="guest-name" placeholder="Nguyễn Văn A" required>
+                                            </div>
+                                        </div>
+                                        <div class="bk-field">
+                                            <label class="bk-label" for="guest-phone">
+                                                Số điện thoại <span class="bk-required">*</span>
+                                            </label>
+                                            <div class="bk-input-wrap">
+                                                <i data-lucide="phone" class="bk-input-icon"></i>
+                                                <input type="tel" class="bk-input bk-input--icon" id="guest-phone" placeholder="09xxxxxxxx" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bk-field bk-field--full">
+                                        <label class="bk-label" for="guest-email">
+                                            Email
+                                        </label>
+                                        <div class="bk-input-wrap">
+                                            <i data-lucide="mail" class="bk-input-icon"></i>
+                                            <input type="email" class="bk-input bk-input--icon" id="guest-email" placeholder="email@example.com">
+                                        </div>
+                                    </div>
+                                    <div class="bk-field bk-field--full">
+                                        <label class="bk-label" for="guest-note">Ghi chú</label>
+                                        <textarea class="bk-textarea" id="guest-note" rows="3" placeholder="Yêu cầu đặc biệt, giờ đến dự kiến, dịch vụ thêm..." style="resize: none;"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Actions -->
+                            <div class="bk-actions">
+                                <a href="phong.html" class="bk-btn-cancel">
+                                    <i data-lucide="arrow-left" class="bk-btn-icon"></i>
+                                    Hủy bỏ
+                                </a>
+
+                                <button type="submit" class="bk-btn-primary" id="confirmBooking">
+                                    <i data-lucide="send" class="bk-btn-icon"></i>
+                                    Đặt phòng
+                                </button>
+                            </div>
+
+                        </form>
+                    </div><!-- end bk-main -->
+
+                    <!-- ===== SIDEBAR ===== -->
+                    <aside class="bk-sidebar">
+
+                        <!-- Tóm tắt đặt phòng -->
+                        <div class="bk-summary">
+                            <div class="bk-summary__header">
+                                <h3 class="bk-summary__title">Tóm tắt đặt phòng</h3>
+                            </div>
+                            <div class="bk-summary__body">
+                                <div class="bk-summary__room-img">
+                                    <img src="assets/images/room1.png" alt="Phòng đã chọn">
+                                    <div class="bk-summary__room-badge" id="summary-type">Standard</div>
+                                </div>
+                                <div class="bk-summary__info">
+                                    <div class="bk-summary__row">
+                                        <span class="bk-summary__key">Số phòng</span>
+                                        <span class="bk-summary__val" id="summary-room">—</span>
+                                    </div>
+                                    <div class="bk-summary__row">
+                                        <span class="bk-summary__key">Hình thức</span>
+                                        <span class="bk-summary__val" id="summary-stay">Theo giờ</span>
+                                    </div>
+                                    <div class="bk-summary__row">
+                                        <span class="bk-summary__key">Nhận phòng</span>
+                                        <span class="bk-summary__val" id="summary-checkin">—</span>
+                                    </div>
+                                    <div class="bk-summary__row">
+                                        <span class="bk-summary__key">Trả phòng</span>
+                                        <span class="bk-summary__val" id="summary-checkout">—</span>
+                                    </div>
+                                    <div class="bk-summary__row">
+                                        <span class="bk-summary__key">Dự kiến</span>
+                                        <span class="bk-summary__val" id="summary-duration">—</span>
+                                    </div>
+                                    <div class="bk-summary__divider"></div>
+                                    <div class="bk-summary__row bk-summary__row--total">
+                                        <span class="bk-summary__key">Thành tiền</span>
+                                        <span class="bk-summary__val bk-summary__val--gold" id="summary-total">— đ</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Chính sách -->
+                        <div class="bk-policy">
+                            <h4 class="bk-policy__title">
+                                <i data-lucide="shield-check" class="bk-policy-icon"></i>
+                                Chính sách đặt phòng
+                            </h4>
+                            <ul class="bk-policy__list">
+                                <li>Check-in: <strong>14:00</strong> · Check-out: <strong>12:00</strong></li>
+                                <li>Cọc <strong>30–50%</strong> để giữ chỗ</li>
+                                <li>Hủy trước 7 ngày: <strong>miễn phí</strong></li>
+                                <li>Hủy 3–6 ngày trước: mất cọc 30%</li>
+                                <li>Trẻ dưới 6 tuổi: <strong>miễn phí</strong></li>
+                            </ul>
+                        </div>
+
+                        <!-- Hotline -->
+                        <div class="bk-hotline">
+                            <i data-lucide="headphones" class="bk-hotline__icon"></i>
+                            <div>
+                                <p class="bk-hotline__label">Hỗ trợ đặt phòng 24/7</p>
+                                <a href="tel:0822515558" class="bk-hotline__number">0822 515 558</a>
+                            </div>
+                        </div>
+
+                    </aside>
+
+                </div><!-- end bk-layout -->
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== POPUP XÁC NHẬN THÀNH CÔNG ===== -->
+    <div class="bk-popup-overlay" id="bookingPopup">
+        <div class="bk-popup">
+            <div class="bk-popup__icon">
+                <i data-lucide="check-circle"></i>
+            </div>
+            <h2 class="bk-popup__title">Đặt phòng thành công!</h2>
+            <p class="bk-popup__sub">Cảm ơn bạn đã chọn Thành Danh Hotel.<br>Chúng tôi sẽ xác nhận trong vòng <strong>30 phút</strong>.</p>
+            <div class="bk-popup__info" id="popupInfo"></div>
+            <div class="bk-popup__actions">
+                <a href="index.html" class="bk-popup__btn bk-popup__btn--outline">Về trang chủ</a>
+                <a href="phong.html" class="bk-popup__btn bk-popup__btn--primary">Xem phòng khác</a>
+            </div>
+            <button type="button" class="bk-popup__close" id="closePopup" aria-label="Đóng">
+                <i data-lucide="x"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-col-info">
+                        <div class="footer-logo">
+                            <img src="assets/images/Logo-Thành Danh ( gốc ).png" alt="Thành Danh Hotel Logo">
+                        </div>
+                        <h4 class="company-name">CÔNG TY TNHH THƯƠNG MẠI VÀ XÂY DỰNG<br>TỔNG HỢP THÀNH DANH</h4>
+                        <p>Mã số doanh nghiệp: 3101069684</p>
+                        <p>Đăng ký lần đầu: ngày 10 tháng 05 năm 2019</p>
+                        <p>Đơn vị cấp: SỞ TÀI CHÍNH TỈNH QUẢNG TRỊ<br>PHÒNG ĐĂNG KÝ KINH DOANH</p>
+                        <p>Trụ sở chính: 42 Đường Thành Công, Đồng Hới</p>
+                        <div class="footer-contact-list">
+                            <p><i data-lucide="mail" width="16" height="16"></i> thanhdanhqb86@gmail.com</p>
+                            <p><i data-lucide="phone" width="16" height="16"></i> 0822515558</p>
+                            <p><i data-lucide="map-pin" width="16" height="16"></i> 42 Đường Thành Công, Đồng Hới</p>
+                        </div>
+                    </div>
+                    <div class="footer-col-links">
+                        <h4 class="footer-title">LIÊN KẾT NHANH</h4>
+                        <ul class="footer-nav">
+                            <li><a href="gioi-thieu.html">VỀ CHÚNG TÔI</a></li>
+                            <li><a href="phong.html">PHÒNG & SUITE</a></li>
+                            <li><a href="uu-dai.html">ƯU ĐÃI ĐẶC BIỆT</a></li>
+                            <li><a href="bai-viet.html">CẨM NANG DU LỊCH</a></li>
+                            <li><a href="lien-he.html">LIÊN HỆ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-links">
+                        <h4 class="footer-title">CHÍNH SÁCH</h4>
+                        <ul class="footer-nav">
+                            <li><a href="#">CHÍNH SÁCH BẢO MẬT</a></li>
+                            <li><a href="#">ĐIỀU KHOẢN SỬ DỤNG</a></li>
+                            <li><a href="#">CHÍNH SÁCH HOÀN HỦY</a></li>
+                            <li><a href="#">QUY ĐỊNH LƯU TRÚ</a></li>
+                            <li><a href="#">HƯỚNG DẪN ĐẶT PHÒNG</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-social">
+                        <h4 class="footer-title">KẾT NỐI VỚI CHÚNG TÔI</h4>
+                        <div class="fb-page-container">
+                            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D61587188752310&tabs=&width=340&height=130&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="100%" height="130" class="fb-iframe" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                        </div>
+                        <div class="footer-partners" style="margin-top: 15px;">
+                            <a href="#"><img src="assets/images/facebook.png" alt="Facebook" style="height: 26px; width: auto; object-fit: contain;"></a>
+                            <a href="#"><img src="assets/images/zalo.png" alt="Zalo" style="height: 26px; width: auto; object-fit: contain;"></a>
+                            <a href="#"><img src="assets/images/instagram.png" alt="Instagram" style="height: 26px; width: auto; object-fit: contain;"></a>
+                            <a href="#"><img src="assets/images/booking.png" alt="Booking.com" class="partner-footer"></a>
+                            <a href="#"><img src="assets/images/expedia.png" alt="Expedia" class="partner-footer"></a>
+                            <a href="#"><img src="assets/images/trip.png" alt="Trip.com" class="partner-footer"></a>
+                            <a href="#"><img src="assets/images/agoda.png" alt="Agoda" class="partner-footer partner-footer-bg"></a>
+                            <a href="#"><img src="assets/images/traveloka.png" alt="Traveloka" class="partner-footer partner-footer-bg"></a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-inner">
+                    <p>Bản quyền thuộc về &copy; 2026 Thành Danh Hotel</p>
+                    <p>Thiết kế và phát triển bởi <a href="https://nrglobal.vn/" target="_blank" rel="noopener noreferrer">NR Global</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/booking.js"></script>
+</body>
+</html>

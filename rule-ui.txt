@@ -1,9 +1,0 @@
-RULE UI:
-Sử dụng: HTML 5, CSS 3, Javascript, 1 số thư viện JS
-1. assets: chứa /css/*.css và /js/*.js
-2. CSS class đặt tên tường minh(vd: section-banner, section-about, ... không phải abcxyz, psajfhs, ...), note trong file CSS để dễ tìm kiếm và chỉnh sửa
-3. slide dùng thư viện carousel dùng swiper
-4. click xem ảnh dùng fancybox
-5. tối ưu tốt trên mobile (đặc biệt là header, fontsize tối ưu, padding, margin, ...)
-6. mobile header: ẩn desktop header, hiện menu icon mobile, khi click menu icon mobile thì hiển thị mobile-overlay giống thiết kế, sau khi đóng mobile-overlay thì quay lại trạng thái ban đầu, 
-7. trang chủ,  đã edit lại phần tìm kiếm đặt ở header, sau phần logo, các tab filter chuyển xuống dưới phần booking form, khi click vào tab filter thì hiển thị các phòng tương ứng 

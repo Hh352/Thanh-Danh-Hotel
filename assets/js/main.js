@@ -101,6 +101,9 @@ document.addEventListener('DOMContentLoaded', function() {
       // Custom options
       infinite: true
     });
+    Fancybox.bind('[data-fancybox="customer-gallery"]', {
+      infinite: true
+    });
   }
 
   // 6. Sticky Header optimization
@@ -121,8 +124,8 @@ document.addEventListener('DOMContentLoaded', function() {
       loop: true,
       breakpoints: {
         768: { slidesPerView: 2, spaceBetween: 20 },
-        1024: { slidesPerView: 2, spaceBetween: 30 },
-        1200: { slidesPerView: 3, spaceBetween: 30 }
+        1024: { slidesPerView: 3, spaceBetween: 24 },
+        1200: { slidesPerView: 4, spaceBetween: 24 }
       }
     };
 
@@ -392,6 +395,48 @@ document.addEventListener('DOMContentLoaded', () => {
                 768: { slidesPerView: 3, spaceBetween: 30 },
                 1024: { slidesPerView: 4, spaceBetween: 30 },
             }
+        });
+    }
+});
+
+
+// Number Counter Animation
+document.addEventListener('DOMContentLoaded', function() {
+    const counters = document.querySelectorAll('.counter');
+    if (counters.length > 0) {
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.5
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const counter = entry.target;
+                    const target = +counter.getAttribute('data-target');
+                    const duration = 3000; // 3 seconds
+                    const increment = target / (duration / 16); // 60 FPS
+
+                    let current = 0;
+                    const updateCounter = () => {
+                        current += increment;
+                        if (current < target) {
+                            counter.innerText = Math.ceil(current);
+                            requestAnimationFrame(updateCounter);
+                        } else {
+                            counter.innerText = target;
+                        }
+                    };
+
+                    updateCounter();
+                    observer.unobserve(counter);
+                }
+            });
+        }, observerOptions);
+
+        counters.forEach(counter => {
+            observer.observe(counter);
         });
     }
 });
