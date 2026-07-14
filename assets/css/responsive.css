@@ -153,6 +153,9 @@
     max-width: 350px;
     justify-content: center;
   }
+  .price-slider-wrapper.active {
+    transform: translateX(50%) translateY(0) scale(1);
+  }
 
   .price-slider-line {
     width: 100%;

@@ -96,7 +96,7 @@
         .global-section-title {
             text-align: center !important;
             position: relative;
-            margin-bottom: 50px;
+            margin-bottom: 15px;
             padding-bottom: 15px;
             font-size: clamp(24px, 4vw, 36px);
             font-weight: 800;

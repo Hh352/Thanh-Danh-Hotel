@@ -221,13 +221,13 @@
 }
 
 .blog-cat-bar {
-    display: inline-block;
-    width: 4px;
-    height: 20px;
-    background: #d4af37;
-    border-radius: 2px;
-    flex-shrink: 0;
-}
+      display: none;
+      width: 4px;
+      height: 20px;
+      background: #d4af37;
+      border-radius: 2px;
+      flex-shrink: 0;
+  }
 
 /* Blog cards grid — 3 columns */
 .blog-cards-grid {

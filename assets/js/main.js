@@ -104,6 +104,9 @@ document.addEventListener('DOMContentLoaded', function() {
     Fancybox.bind('[data-fancybox="customer-gallery"]', {
       infinite: true
     });
+    Fancybox.bind('[data-fancybox="article-gallery"]', {
+      infinite: true
+    });
   }
 
   // 6. Sticky Header optimization

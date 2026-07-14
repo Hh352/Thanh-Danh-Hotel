@@ -263,7 +263,10 @@
             line-height: 1.7;
             margin: 0;
         }
-        .rd-policy-item ul { padding-left: 18px; }
+        .rd-policy-item ul { 
+            padding-left: 0;
+            list-style: none; 
+        }
 
         /* Booking Box */
         .rd-booking {
